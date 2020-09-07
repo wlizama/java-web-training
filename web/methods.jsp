@@ -12,14 +12,14 @@
         <title>Methods</title>
     </head>
     <body>
-        <form>
+        <form method="POST" action="methods_data.jsp">
             <div>
                 <label for="txtNombre">Nombre</label>
-                <input id="txtNombre" />
+                <input id="txtNombre" name="nombre" />
             </div>
             <div>
                 <label for="txtApellido">Apellido</label>
-                <input id="txtApellido" />
+                <input id="txtApellido" name="apellido" />
             </div>
             <div>
                 <button type="submit">Enviar</button>
