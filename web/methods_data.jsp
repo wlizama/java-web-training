@@ -26,7 +26,7 @@
             </tr>
             <tr>
                 <td>Apellido</td>
-                <td><%=apellido%></td>
+                <td><%=apellido.toUpperCase()%></td>
             </tr>
         </table>
     </body>
