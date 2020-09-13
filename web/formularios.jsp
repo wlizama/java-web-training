@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Methods</title>
+        <title>Formularios</title>
     </head>
     <body>
         <form method="POST" action="formularios_data.jsp">
