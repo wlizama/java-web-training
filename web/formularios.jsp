@@ -12,7 +12,7 @@
         <title>Methods</title>
     </head>
     <body>
-        <form method="POST" action="methods_data.jsp">
+        <form method="POST" action="formularios_data.jsp">
             <table>
                 <tr>
                     <td colspan="2"><h1>Simple Form</h1></td>

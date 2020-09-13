@@ -13,7 +13,12 @@
     </head>
     <body>
         <ul>
-            <li><a href="methods.jsp">Métodos</a></li>
+            <li>
+                <a href="formularios.jsp">Uso de formularios JSP</a>
+            </li>
+            <li>
+                <a href="clases01.jsp">Primer uso de clases</a>
+            </li>
         </ul>
         
     </body>
