@@ -15,18 +15,44 @@
         <%
             String nombre = request.getParameter("nombre");
             String apellido = request.getParameter("apellido");
+            String fnacimiento = request.getParameter("fnacimiento");
+            String sexo = request.getParameter("sexo");
+            String[] preferencias = request.getParameterValues("preferencias");
         %>
         <table>
             <tr>
-                <td colspan="2">Datos recibidos</td>
+                <td colspan="2"><h1>Datos recibidos</h1></td>
             </tr>
             <tr>
-                <td>Nombre:</td>
-                <td><%=nombre%></td>
+                <td><b>Nombre:</b></td>
+                <td><%=nombre.toUpperCase()%></td>
             </tr>
             <tr>
-                <td>Apellido</td>
+                <td><b>Apellido</b></td>
                 <td><%=apellido.toUpperCase()%></td>
+            </tr>
+            <tr>
+                <td><b>Fecha de nacimiento</b></td>
+                <td><%=fnacimiento%></td>
+            </tr>
+            <tr>
+                <td><b>Sexo</b></td>
+                <td>
+                <% if (sexo.toLowerCase().equals("m")) { %>
+                    Masculino 
+                <% } else if (sexo.toLowerCase().equals("f")) { %>
+                    Femenino
+                <% }%>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Preferencias</b></td>
+                <td>
+                <% for ( String pref : preferencias ) { %>
+                <%= String.valueOf(pref.charAt(0)).toUpperCase().concat(pref.substring(1, pref.length())) %>
+                <br />
+                <% }%>
+                </td>
             </tr>
         </table>
     </body>
