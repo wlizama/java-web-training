@@ -11,30 +11,30 @@
         <title>Clases 01</title>
     </head>
     <body>
-        <form method="POST" action="formularios_data.jsp">
+        <form method="POST" action="clases01_data.jsp">
             <table>
                 <tr>
                     <td colspan="2"><h1>Ecuación de 2do grado con clases</h1></td>
                 </tr>
                 <tr>
-                    <td><label for="txtNombre">Formula</label></td>
+                    <td><label for="txtNombre">Fórmula</label></td>
                     <td><img src="assets/img/frm2grado01.png" /></td>
                 </tr>
                 <tr>
-                    <td><label for="txtNombre">Solución</label></td>
+                    <td><label for="txtNombre">Fórmula de solución</label></td>
                     <td><img src="assets/img/frm2grado02.png" /></td>
                 </tr>
                 <tr>
                     <td><label for="txtvala"><i>a</i></label></td>
-                    <td><input id="txtvala" name="vala" type="number" /></td>
+                    <td><input id="txtvala" name="vala" type="number" required /></td>
                 </tr>
                 <tr>
                     <td><label for="txtvalb"><i>b</i></label></td>
-                    <td><input id="txtvalb" name="valb" type="number" /></td>
+                    <td><input id="txtvalb" name="valb" type="number" required /></td>
                 </tr>
                 <tr>
                     <td><label for="txtvalc"><i>c</i></label></td>
-                    <td><input id="txtvalc" name="valc" type="number" /></td>
+                    <td><input id="txtvalc" name="valc" type="number" required /></td>
                 </tr>
                 <tr>
                     <td><button type="reset">Cancelar</button></td>
