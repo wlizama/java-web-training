@@ -19,6 +19,9 @@
             <li>
                 <a href="clases01.jsp">Primer uso de clases</a>
             </li>
+            <li>
+                <a href="prueba_servlet01.jsp">Prueba servlet 01</a>
+            </li>
         </ul>
         
     </body>
