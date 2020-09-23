@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package connection;
+package ado;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -17,7 +17,7 @@ public class ConnectionMysql {
     private static String bdname = "";
     public static String bduser = "";
     public static String bduserpwd = "";
-    public static String server = "localhost";
+    public static String server = "192.168.0.6:8083";
     public static String url = "jdbc:mysql://" + bdname;
 
     public static Connection abrir() {
