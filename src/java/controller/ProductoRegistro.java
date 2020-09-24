@@ -5,6 +5,7 @@
  */
 package controller;
 
+import ado.MySqlCRUD;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -12,7 +13,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import ado.ConnectionMysql;
 
 /**
  *
@@ -39,28 +39,22 @@ public class ProductoRegistro extends HttpServlet {
             String nombre = request.getParameter("nombre");
             double precio = Double.parseDouble(request.getParameter("precio"));
             int cantidad = Integer.parseInt(request.getParameter("cantidad"));
+             
+            boolean isOk = MySqlCRUD.insert(
+                "productos",
+                "nombre, precio, cantidad", 
+                "'" + nombre + "', " +
+                precio + ", " +
+                cantidad
+            );
             
-            ConnectionMysql con = new ConnectionMysql();
+            request.setAttribute("state", isOk);
             
-            if (con.)
+            request.getRequestDispatcher("/view/ProductoRegistrado.jsp").forward(request, response);
             
         } catch (Exception e) {
-            
-            
+            out.close();
         }
-//        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-//            out.println("<!DOCTYPE html>");
-//            out.println("<html>");
-//            out.println("<head>");
-//            out.println("<title>Servlet ProductoRegistro</title>");            
-//            out.println("</head>");
-//            out.println("<body>");
-//            out.println("<h1>Servlet ProductoRegistro at " + request.getContextPath() + "</h1>");
-//            out.println("</body>");
-//            out.println("</html>");
-            
-//        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
