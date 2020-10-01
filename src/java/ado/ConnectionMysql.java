@@ -18,7 +18,7 @@ public class ConnectionMysql {
     public static String bduser = "";
     public static String bduserpwd = "";
     public static String server = "192.168.0.6:8083";
-    public static String url = "jdbc:mysql://" + bdname;
+    public static String url = "jdbc:mysql://" + "/" + bdname;
 
     public static Connection abrir() {
         try {

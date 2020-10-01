@@ -22,6 +22,9 @@
             <li>
                 <a href="prueba_servlet01.jsp">Prueba servlet 01</a>
             </li>
+            <li>
+                <a href="prueba_ado01.jsp">Prueba ADO 01</a>
+            </li>
         </ul>
         
     </body>
